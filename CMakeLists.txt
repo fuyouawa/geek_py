@@ -1,13 +1,13 @@
 cmake_minimum_required(VERSION 3.4...3.18)
-project(geek_py)
+set(PROJ_NAME geek_py)
+
+project(${PROJ_NAME})
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(THIRD_PARTY_DIR ${PROJECT_SOURCE_DIR}/third-party)
 set(PYBIND11_HEADER_PATH ${THIRD_PARTY_DIR}/pybind11/include)
 set(PYBIND11_HEADER_PATH ${THIRD_PARTY_DIR}/geek/include)
-
-set(PROJ_NAME geek_py)
 
 include_directories(${PYBIND11_HEADER_PATH})
 
